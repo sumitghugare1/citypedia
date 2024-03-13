@@ -1,29 +1,54 @@
-<html>
- <head> sumit ghugare<head>
- <title> Login Form </title>
- <script>
- 	function l1()
- 	{
- 		window.location.href="web.html"
- 	}
-</script>
- <body>
-     <h2><p style ="color : red ">Login Page</p></h2>
-<br>
-<form>
-    username:<input type="text" name="first name" placeholder="enter username.."><br>
-	password:<input type="text" name="password" placeholder="enter your password"><br>
-	
-	<br><input type="submit" value="login" onclick="l1()" ><br>
-	<body style="background-color: lightcyan;">
-
-
-// <br><a href="second.html"> click to go on homepage</a><br>
-	
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightcyan;
+        }
+        h2 {
+            color: red;
+        }
+        form {
+            margin: 0 auto;
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>Login Page</h2>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter username..">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+        <input type="submit" value="Login">
+    </form>
 </body>
-	</body>
-	</html>
-	
-	
- 
+</html>
